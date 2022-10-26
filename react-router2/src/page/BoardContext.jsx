@@ -9,7 +9,7 @@ const BoardContext = () => {
     const boardlist = useContext(StateContext)
     const { id } = useParams();
 
-    // 원하는 id의 값만 가져오는 것 > 서버에서 해야 할 일 
+    // 원래: 원하는 id의 값만 가져오는 것 > 서버에서 해야 할 일 
     const getBoard = () => {
         const board = boardlist.find((board)=>(board.id==id))
         return board.context;

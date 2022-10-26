@@ -32,6 +32,7 @@ function App() {
       <StateContext.Provider value={boardlist}>
         <SetContext.Provider value={setBoard}>
         <Routes>
+          {/* Routes안에 Route가 들어가면 outlet 통해 연결? */}
           <Route path='/' element={<Layout />}>
             {/* pat='/'대신에 index사용 */}
             <Route path='/' element={<Home />} />
